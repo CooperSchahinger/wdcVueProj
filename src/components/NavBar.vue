@@ -3,19 +3,28 @@
     <h1 v-on:click="routeHome()" class="app-name">Application name</h1>
     <div class="nav-items-container">
       <ul class="nav-items">
-        <router-link class="nav-item" to="/">Home</router-link>
-        |
-        <router-link class="nav-item" to="/about">About</router-link>
-        |
-        <router-link class="nav-item" to="/events">Events</router-link>
+        <router-link class="nav-item" to="/"
+          >Home <ion-icon name="home-outline"></ion-icon
+        ></router-link>
+        <router-link class="nav-item" to="/about"
+          >About
+          <ion-icon name="information-outline"></ion-icon>
+        </router-link>
+
+        <router-link class="nav-item" to="/events"
+          >Events
+          <ion-icon name="beer-outline"></ion-icon>
+        </router-link>
 
         <router-link class="nav-item-login" to="/login">
-          <div class="button">Login</div>
+          <div class="button">
+            <ion-icon size="large" name="log-in-outline"></ion-icon>
+          </div>
         </router-link>
 
-        <router-link class="nav-item" to="/signup">
+        <!-- <router-link class="nav-item" to="/signup">
           <div class="button">Sign-up</div>
-        </router-link>
+        </router-link> -->
       </ul>
     </div>
   </div>
@@ -56,6 +65,7 @@ export default {
 .nav-item {
   padding: 10px;
   color: #fefae0;
+  text-decoration: none;
 }
 
 .nav-item-login {

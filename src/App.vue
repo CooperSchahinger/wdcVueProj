@@ -40,6 +40,12 @@ h3 {
   color: #fefae0;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .nav {
   /* display: block; */
   padding: 0px;

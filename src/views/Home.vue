@@ -1,12 +1,10 @@
 <template>
-  <div class="home">
-
-  </div>
+  <div class="home"></div>
 </template>
 
 <style scoped>
 .home {
-  height: 100vh;
+  height: 200vh;
 }
 </style>
 
